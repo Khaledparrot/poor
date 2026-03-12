@@ -19,18 +19,17 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--primary);
     min-height: 100vh;
-    color: var(--dark);
 }
 
 .app-container {
     max-width: 500px;
     margin: 0 auto;
-    padding: 15px;
     min-height: 100vh;
     background: var(--white);
+    padding: 15px;
 }
 
-/* Modal */
+/* MODAL */
 .modal {
     position: fixed;
     top: 0;
@@ -55,36 +54,24 @@ body {
     overflow-y: auto;
 }
 
-.modal-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-/* Header */
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--border);
 }
 
 .header h1 {
     font-size: 1.5rem;
-    font-weight: 500;
     color: var(--primary);
 }
 
 .user-info {
     font-size: 0.9rem;
     color: var(--gray);
-}
-
-.header-actions {
-    display: flex;
-    gap: 10px;
 }
 
 .btn-icon {
@@ -96,20 +83,16 @@ body {
     font-size: 1.2rem;
 }
 
-/* Progress Grid */
+/* PROGRESS GRID */
 .summary-section {
-    margin-bottom: 25px;
-}
-
-.summary-section h2 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .progress-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin-top: 10px;
 }
 
 .progress-item {
@@ -150,12 +133,12 @@ body {
     color: var(--gray);
 }
 
-/* Navigation */
+/* NAVIGATION */
 .nav-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .nav-btn {
@@ -167,11 +150,7 @@ body {
     cursor: pointer;
 }
 
-.nav-btn:hover {
-    background: var(--border);
-}
-
-/* Sections */
+/* SECTIONS */
 .section {
     background: var(--white);
     border-radius: 12px;
@@ -182,37 +161,16 @@ body {
 
 .section h2 {
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: var(--primary);
 }
 
 .section h3 {
     font-size: 1.1rem;
-    margin: 20px 0 15px;
+    margin: 15px 0 10px;
 }
 
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.section-header h2 {
-    margin-bottom: 0;
-}
-
-.btn-undo {
-    padding: 8px 12px;
-    background: var(--light);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
-
-/* Forms */
+/* FORMULAIRES */
 .form-group, .input-group {
     margin-bottom: 15px;
 }
@@ -220,8 +178,8 @@ body {
 .form-group label, .input-group label {
     display: block;
     margin-bottom: 5px;
-    font-size: 0.9rem;
     color: var(--gray);
+    font-size: 0.9rem;
 }
 
 input, select {
@@ -230,9 +188,10 @@ input, select {
     border: 1px solid var(--border);
     border-radius: 6px;
     font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-/* Buttons */
+/* BOUTONS */
 .btn {
     padding: 12px 20px;
     border: none;
@@ -258,9 +217,10 @@ input, select {
     padding: 6px 12px;
     font-size: 0.85rem;
     width: auto;
+    margin: 5px;
 }
 
-/* Progress Bars */
+/* PROGRESS BARS */
 .progress-bar {
     flex: 1;
     height: 8px;
@@ -288,12 +248,12 @@ input, select {
 }
 
 .macro-row span:last-child {
-    width: 80px;
+    width: 70px;
     text-align: right;
     font-size: 0.9rem;
 }
 
-/* Stats */
+/* STATS */
 .stat-row {
     display: flex;
     justify-content: space-between;
@@ -310,25 +270,25 @@ input, select {
     background: var(--light);
     padding: 15px;
     border-radius: 8px;
+    margin-bottom: 15px;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .stat-label {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: var(--gray);
     display: block;
     margin-bottom: 5px;
 }
 
 .stat-number {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
     color: var(--primary);
     display: block;
 }
 
-/* Big Circle */
+/* BIG CIRCLE */
 .big-circle {
     width: 150px;
     height: 150px;
@@ -358,37 +318,21 @@ input, select {
     color: var(--primary);
 }
 
-/* Water */
-.water-controls {
-    margin: 20px 0;
-}
-
+/* WATER */
 .water-input-large input {
     width: 100%;
     padding: 15px;
     font-size: 1.2rem;
+    text-align: center;
     border: 2px solid var(--border);
     border-radius: 8px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.water-btn-small {
-    width: 100%;
-    padding: 12px;
-    background: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-bottom: 15px;
 }
 
 .water-presets {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .water-preset {
@@ -399,183 +343,52 @@ input, select {
     cursor: pointer;
 }
 
-/* Quantity Type */
-.quantity-type-selector {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 15px;
-}
-
-.qty-btn {
-    flex: 1;
-    padding: 10px;
-    background: var(--light);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.qty-btn.active {
-    background: var(--primary);
-    color: white;
-}
-
-/* Checkbox */
-.checkbox-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 5px;
-}
-
-.checkbox-group label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 0.9rem;
-}
-
-/* Lists */
-.today-foods ul {
-    max-height: 200px;
-    overflow-y: auto;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px;
-    list-style: none;
-}
-
-.today-foods li {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.food-list ul {
-    max-height: 300px;
-    overflow-y: auto;
-    list-style: none;
-}
-
-.food-list li {
-    padding: 10px;
-    border-bottom: 1px solid var(--border);
-}
-
-/* Notifications */
-.notification-panel {
-    position: fixed;
-    top: 70px;
-    right: 15px;
-    width: 90%;
-    max-width: 350px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    z-index: 1000;
-    max-height: 80vh;
-    overflow-y: auto;
-}
-
-.notification-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid var(--border);
-}
-
-.notifications-list {
-    padding: 15px;
-}
-
-.notification-item {
-    padding: 10px;
-    border-bottom: 1px solid var(--border);
-}
-
-/* Timer */
-.meditation-timer {
-    text-align: center;
-    padding: 20px;
-    background: var(--light);
-    border-radius: 12px;
-}
-
+/* TIMER */
 .timer-display {
     font-size: 4rem;
     font-weight: 300;
     color: var(--primary);
+    text-align: center;
     margin: 20px 0;
     font-family: monospace;
 }
 
 .timer-presets {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
 }
 
 .timer-preset {
-    padding: 10px;
-    background: white;
+    padding: 10px 20px;
+    background: var(--light);
     border: 1px solid var(--border);
     border-radius: 6px;
     cursor: pointer;
 }
 
-.timer-controls {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-/* Small Input */
-.small-input {
-    width: 80px;
-    padding: 6px;
+/* FOOD LISTS */
+.today-foods ul, .food-list ul {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
     border: 1px solid var(--border);
-    border-radius: 4px;
-    margin-right: 5px;
-}
-
-.stat-actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-/* Bristol Info */
-.bristol-info {
-    background: var(--light);
-    padding: 10px;
     border-radius: 6px;
-    margin: 10px 0;
-    border-left: 3px solid var(--accent);
+    padding: 10px;
 }
 
-/* Recommendations */
-.recommendations {
-    background: var(--light);
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 20px;
-    border-left: 3px solid var(--accent);
-}
-
-.recommendation-item {
-    padding: 8px 0;
+.today-foods li, .food-list li {
+    padding: 8px;
     border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
 }
 
-/* Profile */
+/* PROFILE */
 .profile-info {
     background: var(--light);
-    border-radius: 8px;
     padding: 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
@@ -586,172 +399,23 @@ input, select {
     border-bottom: 1px solid var(--border);
 }
 
-/* Reminders */
-.reminder-item {
+/* RECOMMENDATIONS */
+.recommendations {
+    background: var(--light);
     padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 3px solid var(--accent);
+}
+
+.recommendation-item {
+    padding: 8px 0;
     border-bottom: 1px solid var(--border);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
 }
 
-.reminder-item label {
-    min-width: 120px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.reminder-item input[type="time"],
-.reminder-item select {
-    flex: 1;
-    min-width: 100px;
-}
-
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 480px) {
     .nav-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .water-presets {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .reminder-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .reminder-item input[type="time"] {
-        width: 100%;
-    }
-}
-
-
-/* Ajouts pour la nouvelle version */
-
-.real-time-indicator {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    color: var(--gray);
-    padding: 5px 10px;
-    background: var(--light);
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
-.live-dot {
-    color: #27ae60;
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.3; }
-    100% { opacity: 1; }
-}
-
-.global-score {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 10px;
-    padding: 10px;
-    background: var(--light);
-    border-radius: 8px;
-}
-
-/* Calendrier */
-.calendar-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-    padding: 10px;
-    background: var(--light);
-    border-radius: 8px;
-}
-
-.calendar-nav button {
-    padding: 8px 16px;
-    border: 1px solid var(--border);
-    background: white;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-    margin: 20px 0;
-}
-
-.calendar-day {
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--light);
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
-
-.calendar-day.has-data {
-    background: var(--accent);
-    color: white;
-}
-
-.calendar-day.selected {
-    border: 2px solid var(--primary);
-    transform: scale(1.05);
-}
-
-.daily-report {
-    margin-top: 20px;
-    padding: 15px;
-    background: var(--light);
-    border-radius: 8px;
-}
-
-.report-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.report-item {
-    padding: 10px;
-    background: white;
-    border-radius: 6px;
-    text-align: center;
-}
-
-/* Notifications système */
-.notification-badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: var(--danger);
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Animation de mise à jour */
-@keyframes highlight {
-    0% { background-color: rgba(52, 152, 219, 0.2); }
-    100% { background-color: transparent; }
-}
-
-.updated {
-    animation: highlight 1s ease;
 }
